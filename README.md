@@ -18,7 +18,7 @@ https://packages.msys2.org/package/mingw-w64-x86_64-dlfcn?repo=mingw64
 // its called when an exception occurs.
 void onThrow(boost::stacktrace::stacktrace& strace)
 {
-    std::cout << strace << "\n";
+    std::cerr << strace << "\n";
 }
 
 int main()
